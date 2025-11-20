@@ -32,7 +32,7 @@ async def extract_form_data(file: UploadFile = File(...)):
         
     except Exception as e:
         # If extraction fails, return error
-        print(f"❌ API: Extraction failed: {str(e)}")
+        print(f"API: Extraction failed: {str(e)}")
         return {"error": f"Extraction failed: {str(e)}"}
         
     finally:
